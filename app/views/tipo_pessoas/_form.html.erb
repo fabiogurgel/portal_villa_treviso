@@ -1,0 +1,32 @@
+<%= form_with(model: tipo_pessoa, local: true) do |form| %>
+  <% if tipo_pessoa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tipo_pessoa.errors.count, "error") %> prohibited this tipo_pessoa from being saved:</h2>
+
+      <ul>
+      <% tipo_pessoa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :codigo %>
+    <%= form.text_field :codigo, id: :tipo_pessoa_codigo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_field :descricao, id: :tipo_pessoa_descricao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ativo %>
+    <%= form.check_box :ativo, id: :tipo_pessoa_ativo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

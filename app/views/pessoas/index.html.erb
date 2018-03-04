@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pessoas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome razao social</th>
+      <th>Cnpj</th>
+      <th>Cpf</th>
+      <th>Email</th>
+      <th>Site</th>
+      <th>Endereco</th>
+      <th>Numero</th>
+      <th>Bairro</th>
+      <th>Municipio</th>
+      <th>Uf</th>
+      <th>Cep</th>
+      <th>Telefone</th>
+      <th>Celular</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pessoas.each do |pessoa| %>
+      <tr>
+        <td><%= pessoa.nome_razao_social %></td>
+        <td><%= pessoa.cnpj %></td>
+        <td><%= pessoa.cpf %></td>
+        <td><%= pessoa.email %></td>
+        <td><%= pessoa.site %></td>
+        <td><%= pessoa.endereco %></td>
+        <td><%= pessoa.numero %></td>
+        <td><%= pessoa.bairro %></td>
+        <td><%= pessoa.municipio %></td>
+        <td><%= pessoa.uf %></td>
+        <td><%= pessoa.cep %></td>
+        <td><%= pessoa.telefone %></td>
+        <td><%= pessoa.celular %></td>
+        <td><%= link_to 'Show', pessoa %></td>
+        <td><%= link_to 'Edit', edit_pessoa_path(pessoa) %></td>
+        <td><%= link_to 'Destroy', pessoa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pessoa', new_pessoa_path %>

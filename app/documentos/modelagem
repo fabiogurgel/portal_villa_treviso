@@ -1,0 +1,312 @@
+[fabio@localhost ~]$ history
+    1  sudo su
+    2  exit
+    3  sudo shotdown now
+    4  su
+    5  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    6  \curl -sSL https://get.rvm.io | bash
+    7  source /home/fabio/.rvm/scripts/rvm
+    8  rvm list
+    9  rvm install 2.3.3
+   10  rvm list
+   11  exit
+   12  cd /tmp/
+   13  sudo # wget http://download.documentfoundation.org/libreoffice/stable/6.0.0/rpm/x86_64/LibreOffice_6.0.0_Linux_x86-64_rpm.tar.gz
+   14  sudo wget http://download.documentfoundation.org/libreoffice/stable/6.0.0/rpm/x86_64/LibreOffice_6.0.0_Linux_x86-64_rpm.tar.gz
+   15  tar -xvf LibreOffice_6.0.0_Linux_x86-64_rpm.tar.gz
+   16  cd LibreOffice_6.0.0.3_Linux_x86-64_rpm/
+   17  yum localinstall *.rpm
+   18  sudo yum localinstall *.rpm
+   19  cd ..
+   20  su
+   21  gnome-shell  – – version
+   22  sudo yum -y install https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-centos96-9.6-3.noarch.rpm
+   23  sudo yum -y install postgresql96 postgresql96-devel postgresql96-contrib postgresql96-libs postgresql96-test postgresql96-server postgresql96-docs
+   24  sudo systemctl enable postgresql-9.6
+   25  udo /usr/pgsql-9.6/bin/postgresql96-setup initdb
+   26  sudo /usr/pgsql-9.6/bin/postgresql96-setup initdb
+   27  sudo systemctl start postgresql-9.6
+   28  sudo systemctl status postgresql-9.6
+   29  su - postgres
+   30  sudo -u postgres psql postgres
+   31  sudo systemctl status postgresql-9.6
+   32  ls
+   33  mkdir Sistemas
+   34  ls
+   35  cd Sistemas/
+   36  rvm list
+   37  gem install rails --no-ri --no-rdoc
+   38  ls
+   39  rails new portal_villa_treviso -d postgresql
+   40  yum install libpq-fe.h
+   41  sudo yum install postgresql-devel
+   42  cd portal_villa_treviso/
+   43  bundle
+   44  rails s
+   45  yum install terminator
+   46  yum find terminator
+   47  yum install terminator
+   48  cd ../../Downloads/
+   49  ls
+   50  sudo yum install /home/fabio/Downloads/atom.x86_64.rpm -r
+   51  sudo yum install /home/fabio/Downloads/atom.x86_64.rpm -y
+   52  cd ..
+   53  cd Sistemas/portal_villa_treviso/
+   54  .atom
+   55  .Atom
+   56  . atom
+   57  exit
+   58  cd Sistemas/portal_villa_treviso/
+   59  rails s
+   60  budle
+   61  bundle
+   62  rails s
+   63  rails g scaffold tipo_pessoa codigo:int descricao:string ativo:boolean
+   64  rails g scaffold tipo_pessoa codigo:int descricao:string ativo:boolean;
+   65  rails g scaffold categoria codigo:int descricao:string;
+   66  rails g scaffold area codigo:string descricao:string;
+   67  rails g scaffold lista_produto produto:references quantidade:int;
+   68  rails g scaffold produto categoria:references fornecedor:references descricao:string valor:float quant_minima:int unidade:string;
+   69  rails g scaffold pessoa nome_razao_social:string cnpj:string cpf:string email:string site:string endereco:string numero:string bairro:string municipio:string uf:string cep:string telefone:string celular:string;
+   70  rails g scaffold nota_fiscal fornecedor:references codigo:int numero:int data:date valor:float quantidade:int;
+   71  rails g scaffold sub_area area:references descricao:string produto:references;
+   72  rails g scaffold servico area:references descricao:string lista_produto:references data:date pessoa: references;
+   73  yum install pgadmin3
+   74  rails d tipo_pessoa;
+   75  rails d categoria;
+   76  rails d area;
+   77  rails d lista_produto;
+   78  rails d pessoa;
+   79  rails d produto;
+   80  rails d nota_fiscal;
+   81  rails d sub_area;
+   82  rails d scaffold servico;
+   83  rails d scaffold tipo_pessoa;
+   84  rails d scaffold categoria;
+   85  rails d scaffold area;
+   86  rails d scaffold lista_produto;
+   87  rails d scaffold pessoa;
+   88  rails d scaffold produto;
+   89  rails d scaffold nota_fiscal;
+   90  rails d scaffold sub_area;
+   91  rails g scaffold tipo_pessoa codigo:int descricao:string ativo:boolean;
+   92  rails g scaffold categoria codigo:int descricao:string;
+   93  rails g scaffold area codigo:string descricao:string;
+   94  rails g scaffold lista_produto produto:references quantidade:int;
+   95  rails g scaffold produto categoria:references fornecedor:references descricao:string valor:float quant_minima:int unidade:string;
+   96  rails g scaffold pessoa nome_razao_social:string cnpj:string cpf:string email:string site:string endereco:string numero:string bairro:string municipio:string uf:string cep:string telefone:string celular:string;
+   97  rails g scaffold nota_fiscal fornecedor:references codigo:int numero:int data:date valor:float quantidade:int;
+   98  rails g scaffold sub_area area:references descricao:string produto:references;
+   99  rails g scaffold servico area:references descricao:string lista_produto:references data:date pessoa: references;
+  100  rails d scaffold tipo_pessoa;
+  101  rails d scaffold categoria;
+  102  rails d scaffold area;
+  103  rails d scaffold lista_produto;
+  104  rails d scaffold pessoa;
+  105  rails d scaffold produto;
+  106  rails d scaffold nota_fiscal;
+  107  rails d scaffold sub_area;
+  108  rails d scaffold servico;
+  109  rails g scaffold tipo_pessoa codigo:int descricao:string ativo:boolean;
+  110  rails g scaffold categoria codigo:int descricao:string;
+  111  rails g scaffold area codigo:string descricao:string;
+  112  rails g scaffold lista_produto produto:references quantidade:int;
+  113  rails g scaffold produto categoria:references fornecedor:references descricao:string valor:float quant_minima:int unidade:string;
+  114  rails g scaffold pessoa nome_razao_social:string cnpj:string cpf:string email:string site:string endereco:string numero:string bairro:string municipio:string uf:string cep:string telefone:string celular:string;
+  115  rails g scaffold nota_fiscal fornecedor:references codigo:int numero:int data:date valor:float quantidade:int;
+  116  rails g scaffold sub_area area:references descricao:string produto:references;
+  117  rails g scaffold servico area:references descricao:string lista_produto:references data:date pessoa: references;
+  118  yum list available | grep pgadmin
+  119  yum -y install pgadmin3.x86_64 
+  120  sudo yum -y install pgadmin3.x86_64 
+  121  history
+  122  sudo -u postgres psql postgres
+  123  sudo systemctl restart postgresql-9.6
+  124  sudo systemctl stop postgresql-9.6
+  125  sudo systemctl status postgresql-9.6
+  126  sudo systemctl start postgresql-9.6
+  127  sudo systemctl status postgresql-9.6
+  128  rails g scaffold tipo_pessoa codigo:int descricao:string ativo:boolean
+  129  rails g scaffold tipo_pessoa codigo:int descricao:string ativo:boolean;
+  130  rails g scaffold categoria codigo:int descricao:string;
+  131  rails g scaffold area codigo:string descricao:string;
+  132  rails g scaffold lista_produto produto:references quantidade:int;
+  133  rails g scaffold produto categoria:references fornecedor:references descricao:string valor:float quant_minima:int unidade:string;
+  134  rails g scaffold pessoa nome_razao_social:string cnpj:string cpf:string email:string site:string endereco:string numero:string bairro:string municipio:string uf:string cep:string telefone:string celular:string;
+  135  rails g scaffold nota_fiscal fornecedor:references codigo:int numero:int data:date valor:float quantidade:int;
+  136  rails g scaffold sub_area area:references descricao:string produto:references;
+  137  rails g scaffold servico area:references descricao:string lista_produto:references data:date pessoa: references;
+  138  yum install pgadmin3
+  139  rails d tipo_pessoa;
+  140  rails d categoria;
+  141  rails d area;
+  142  rails d lista_produto;
+  143  rails d pessoa;
+  144  rails d produto;
+  145  rails d nota_fiscal;
+  146  rails d sub_area;
+  147  rails d scaffold servico;
+  148  rails d scaffold tipo_pessoa;
+  149  rails d scaffold categoria;
+  150  rails d scaffold area;
+  151  rails d scaffold lista_produto;
+  152  rails d scaffold pessoa;
+  153  rails d scaffold produto;
+  154  rails d scaffold nota_fiscal;
+  155  rails d scaffold sub_area;
+  156  rails g scaffold tipo_pessoa codigo:int descricao:string ativo:boolean;
+  157  rails g scaffold categoria codigo:int descricao:string;
+  158  rails g scaffold area codigo:string descricao:string;
+  159  rails g scaffold lista_produto produto:references quantidade:int;
+  160  rails g scaffold produto categoria:references fornecedor:references descricao:string valor:float quant_minima:int unidade:string;
+  161  rails g scaffold pessoa nome_razao_social:string cnpj:string cpf:string email:string site:string endereco:string numero:string bairro:string municipio:string uf:string cep:string telefone:string celular:string;
+  162  rails g scaffold nota_fiscal fornecedor:references codigo:int numero:int data:date valor:float quantidade:int;
+  163  rails g scaffold sub_area area:references descricao:string produto:references;
+  164  rails g scaffold servico area:references descricao:string lista_produto:references data:date pessoa: references;
+  165  rails d scaffold tipo_pessoa;
+  166  rails d scaffold categoria;
+  167  rails d scaffold area;
+  168  rails d scaffold lista_produto;
+  169  rails d scaffold pessoa;
+  170  rails d scaffold produto;
+  171  rails d scaffold nota_fiscal;
+  172  rails d scaffold sub_area;
+  173  rails d scaffold servico;
+  174  rails g scaffold tipo_pessoa codigo:int descricao:string ativo:boolean;
+  175  rails g scaffold categoria codigo:int descricao:string;
+  176  rails g scaffold area codigo:string descricao:string;
+  177  rails g scaffold lista_produto produto:references quantidade:int;
+  178  rails g scaffold produto categoria:references fornecedor:references descricao:string valor:float quant_minima:int unidade:string;
+  179  rails g scaffold pessoa nome_razao_social:string cnpj:string cpf:string email:string site:string endereco:string numero:string bairro:string municipio:string uf:string cep:string telefone:string celular:string;
+  180  rails g scaffold nota_fiscal fornecedor:references codigo:int numero:int data:date valor:float quantidade:int;
+  181  rails g scaffold sub_area area:references descricao:string produto:references;
+  182  rails g scaffold servico area:references descricao:string lista_produto:references data:date pessoa: references;
+  183  yum list available | grep pgadmin
+  184  yum -y install pgadmin3.x86_64 
+  185  sudo yum -y install pgadmin3.x86_64 
+  186  history
+  187  sudo -u postgres psql postgres
+  188  sudo systemctl restart postgresql-9.6
+  189  sudo systemctl stop postgresql-9.6
+  190  sudo systemctl status postgresql-9.6
+  191  sudo systemctl start postgresql-9.6
+  192  sudo systemctl status postgresql-9.6
+  193  history
+[fabio@localhost ~]$ A
+bash: A: Comando não encontrado...
+[fabio@localhost ~]$ sudo systemctl status postgresql-9.6
+[sudo] senha para fabio: 
+● postgresql-9.6.service - PostgreSQL 9.6 database server
+   Loaded: loaded (/usr/lib/systemd/system/postgresql-9.6.service; enabled; vendor preset: disabled)
+   Active: active (running) since Dom 2018-02-25 17:55:02 -03; 7min ago
+     Docs: https://www.postgresql.org/docs/9.6/static/
+  Process: 1163 ExecStartPre=/usr/pgsql-9.6/bin/postgresql96-check-db-dir ${PGDATA} (code=exited, status=0/SUCCESS)
+ Main PID: 1182 (postmaster)
+   CGroup: /system.slice/postgresql-9.6.service
+           ├─1182 /usr/pgsql-9.6/bin/postmaster -D /var/lib/pgsql/9.6/data/
+           ├─1328 postgres: logger process   
+           ├─1340 postgres: checkpointer process   
+           ├─1341 postgres: writer process   
+           ├─1342 postgres: wal writer process   
+           ├─1343 postgres: autovacuum launcher process   
+           └─1344 postgres: stats collector process   
+
+Fev 25 17:55:00 localhost.localdomain systemd[1]: Starting PostgreSQL 9.6 database server...
+Fev 25 17:55:01 localhost.localdomain postmaster[1182]: < 2018-02-25 17:55:01.721 -03 > LOG:  redirecionando saída do log para processo coletor de log
+Fev 25 17:55:01 localhost.localdomain postmaster[1182]: < 2018-02-25 17:55:01.721 -03 > DICA:  Saída futura do log aparecerá no diretório "pg_log".
+Fev 25 17:55:02 localhost.localdomain systemd[1]: Started PostgreSQL 9.6 database server.
+[fabio@localhost ~]$ su
+Senha:
+[root@localhost fabio]# 
+[root@localhost fabio]#     su – postgres
+su: user – does not exist
+[root@localhost fabio]# su postgres
+bash-4.2$ 
+bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD ‘senha‘;  
+> 
+>      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD ‘senha‘;  
+^C
+bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres" 
+
+could not change directory to "/home/fabio"
+ERRO:  erro de sintaxe em ou próximo a "postgres"
+LINHA 1: ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres
+                                                       ^
+bash-4.2$ pwd
+/home/fabio
+bash-4.2$ \q
+bash: q: comando não encontrado
+bash-4.2$ \q
+bash: q: comando não encontrado
+bash-4.2$ exit
+exit
+[root@localhost fabio]# exit
+exit
+[fabio@localhost ~]$ sudo su
+[sudo] senha para fabio: 
+[root@localhost fabio]# su -postgres
+su: invalid option -- 'o'
+
+Usage:
+ su [options] [-] [USER [arg]...]
+
+Change the effective user id and group id to that of USER.
+A mere - implies -l.   If USER not given, assume root.
+
+Options:
+ -m, -p, --preserve-environment  do not reset environment variables
+ -g, --group <group>             specify the primary group
+ -G, --supp-group <group>        specify a supplemental group
+
+ -, -l, --login                  make the shell a login shell
+ -c, --command <command>         pass a single command to the shell with -c
+ --session-command <command>     pass a single command to the shell with -c
+                                 and do not create a new session
+ -f, --fast                      pass -f to the shell (for csh or tcsh)
+ -s, --shell <shell>             run shell if /etc/shells allows it
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see su(1).
+[root@localhost fabio]# su - postgres
+Último login:Dom Fev 25 18:08:30 -03 2018em pts/0
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD ‘postgres‘";  
+ERRO:  erro de sintaxe em ou próximo a "‘postgres‘"
+LINE 1: ALTER ROLE postgresql WITH ENCRYPTED PASSWORD ‘postgres‘
+                                                      ^
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres";  
+ERRO:  erro de sintaxe em ou próximo a "postgres"
+LINE 1: ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres
+                                                      ^
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres"  
+ERRO:  erro de sintaxe em ou próximo a "postgres"
+LINE 1: ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres
+                                                      ^
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres;  
+> 
+> ^C
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres;"  
+ERRO:  erro de sintaxe em ou próximo a "postgres"
+LINE 1: ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres;
+                                                      ^
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres";  
+ERRO:  erro de sintaxe em ou próximo a "postgres"
+LINE 1: ALTER ROLE postgresql WITH ENCRYPTED PASSWORD postgres
+                                                      ^
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD ‘senha‘;  
+> ^C
+-bash-4.2$ ^C
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD ‘senha‘;  
+> ^C
+-bash-4.2$ ^C
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD ‘senha‘";  
+ERRO:  erro de sintaxe em ou próximo a "‘senha‘"
+LINE 1: ALTER ROLE postgresql WITH ENCRYPTED PASSWORD ‘senha‘
+                                                      ^
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD senha";  
+ERRO:  erro de sintaxe em ou próximo a "senha"
+LINE 1: ALTER ROLE postgresql WITH ENCRYPTED PASSWORD senha
+                                                      ^
+-bash-4.2$      psql -c "ALTER ROLE postgresql WITH ENCRYPTED PASSWORD senha";  
+

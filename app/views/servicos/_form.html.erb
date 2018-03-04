@@ -1,0 +1,47 @@
+<%= form_with(model: servico, local: true) do |form| %>
+  <% if servico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(servico.errors.count, "error") %> prohibited this servico from being saved:</h2>
+
+      <ul>
+      <% servico.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :area_id %>
+    <%= form.text_field :area_id, id: :servico_area_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricao %>
+    <%= form.text_field :descricao, id: :servico_descricao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lista_produto_id %>
+    <%= form.text_field :lista_produto_id, id: :servico_lista_produto_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.date_select :data, id: :servico_data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pessoa %>
+    <%= form.text_field :pessoa, id: :servico_pessoa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :references %>
+    <%= form.text_field :references, id: :servico_references %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

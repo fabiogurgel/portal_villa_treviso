@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fornecedor:</strong>
+  <%= @nota_fiscal.fornecedor %>
+</p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @nota_fiscal.codigo %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @nota_fiscal.numero %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @nota_fiscal.data %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @nota_fiscal.valor %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @nota_fiscal.quantidade %>
+</p>
+
+<%= link_to 'Edit', edit_nota_fiscal_path(@nota_fiscal) %> |
+<%= link_to 'Back', nota_fiscais_path %>

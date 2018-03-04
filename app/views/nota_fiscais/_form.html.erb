@@ -1,0 +1,47 @@
+<%= form_with(model: nota_fiscal, local: true) do |form| %>
+  <% if nota_fiscal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(nota_fiscal.errors.count, "error") %> prohibited this nota_fiscal from being saved:</h2>
+
+      <ul>
+      <% nota_fiscal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fornecedor_id %>
+    <%= form.text_field :fornecedor_id, id: :nota_fiscal_fornecedor_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :codigo %>
+    <%= form.text_field :codigo, id: :nota_fiscal_codigo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero %>
+    <%= form.text_field :numero, id: :nota_fiscal_numero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.date_select :data, id: :nota_fiscal_data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor %>
+    <%= form.text_field :valor, id: :nota_fiscal_valor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantidade %>
+    <%= form.text_field :quantidade, id: :nota_fiscal_quantidade %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

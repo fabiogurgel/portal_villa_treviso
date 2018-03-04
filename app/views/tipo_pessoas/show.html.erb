@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @tipo_pessoa.codigo %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @tipo_pessoa.descricao %>
+</p>
+
+<p>
+  <strong>Ativo:</strong>
+  <%= @tipo_pessoa.ativo %>
+</p>
+
+<%= link_to 'Edit', edit_tipo_pessoa_path(@tipo_pessoa) %> |
+<%= link_to 'Back', tipo_pessoas_path %>

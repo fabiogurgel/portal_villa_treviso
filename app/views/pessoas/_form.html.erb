@@ -1,0 +1,82 @@
+<%= form_with(model: pessoa, local: true) do |form| %>
+  <% if pessoa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pessoa.errors.count, "error") %> prohibited this pessoa from being saved:</h2>
+
+      <ul>
+      <% pessoa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome_razao_social %>
+    <%= form.text_field :nome_razao_social, id: :pessoa_nome_razao_social %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cnpj %>
+    <%= form.text_field :cnpj, id: :pessoa_cnpj %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cpf %>
+    <%= form.text_field :cpf, id: :pessoa_cpf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :pessoa_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :site %>
+    <%= form.text_field :site, id: :pessoa_site %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endereco %>
+    <%= form.text_field :endereco, id: :pessoa_endereco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero %>
+    <%= form.text_field :numero, id: :pessoa_numero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bairro %>
+    <%= form.text_field :bairro, id: :pessoa_bairro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :municipio %>
+    <%= form.text_field :municipio, id: :pessoa_municipio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uf %>
+    <%= form.text_field :uf, id: :pessoa_uf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cep %>
+    <%= form.text_field :cep, id: :pessoa_cep %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefone %>
+    <%= form.text_field :telefone, id: :pessoa_telefone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :celular %>
+    <%= form.text_field :celular, id: :pessoa_celular %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

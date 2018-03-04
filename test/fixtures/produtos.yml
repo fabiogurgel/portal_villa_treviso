@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  categoria: one
+  fornecedor: one
+  descricao: MyString
+  valor: 1.5
+  quant_minima: 
+  unidade: MyString
+
+two:
+  categoria: two
+  fornecedor: two
+  descricao: MyString
+  valor: 1.5
+  quant_minima: 
+  unidade: MyString

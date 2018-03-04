@@ -1,0 +1,27 @@
+<%= form_with(model: lista_produto, local: true) do |form| %>
+  <% if lista_produto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lista_produto.errors.count, "error") %> prohibited this lista_produto from being saved:</h2>
+
+      <ul>
+      <% lista_produto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :produto_id %>
+    <%= form.text_field :produto_id, id: :lista_produto_produto_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantidade %>
+    <%= form.text_field :quantidade, id: :lista_produto_quantidade %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

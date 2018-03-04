@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  area: one
+  descricao: MyString
+  lista_produto: one
+  data: 2018-02-24
+  pessoa: MyString
+  references: MyString
+
+two:
+  area: two
+  descricao: MyString
+  lista_produto: two
+  data: 2018-02-24
+  pessoa: MyString
+  references: MyString

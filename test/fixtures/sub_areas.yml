@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  area: one
+  descricao: MyString
+  produto: one
+
+two:
+  area: two
+  descricao: MyString
+  produto: two
